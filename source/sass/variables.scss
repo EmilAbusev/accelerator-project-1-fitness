@@ -1,4 +1,55 @@
-$gradient-hero: linear-gradient(90deg, #1c3477 0%, #1c3477 0.01%, #1a3578 39.11%, #73184b 75.5%, #b4022a 100%);
+$color-default-white: #ffffff;
+$color-ghost-white: #F8F9FC;
+$color-whisper: #E8E8E8;
+$color-link-water: #c8c9cc;
+$color-spindle: #b6bdcc;
+$color-chambray: #495a7d;
+$color-black-russian: #030a1a;
+$color-sapphire: #102654;
+$color-resolution-blue: #1C3374;
+$color-cobalt: #003EB7;
+$color-cobalt-light: #0041ca;
+$color-smalt: #00359f;
+$color-persian-blue: #2E35AC;
+$color-egyptian-blue: #103AAE;
+$color-resolution-blue: #1c3477;
+$color-resolution-blue-light: #1a3578;
+$color-torch-red: #ED0233;
+$color-crimson: #d10a42;
+$color-torch-red-light: #ff121f;
+$color-venetian-red: #b4022a;
+$color-pompadour: #73184b;
+
+
+$color-sapphire-02: rgba(16, 38, 84, 0.2);
+$color-sapphire-03: rgba(16, 38, 84, 0.3);
+$color-sapphire-05: rgba(16, 38, 84, 0.5);
+$color-sapphire-089: rgba(16, 38, 84, 0.89);
+$color-resolution-blue-02: rgba(28, 51, 116, 0.2);
+$color-dark-cerulean-05: rgba(20, 54, 122, 0.5);
+$color-grey-02: rgba(120, 120, 120, 0.2);
+$color-crimson-02: rgba(209, 10, 66, 0.2);
+
+
+
+$gradient-hero: linear-gradient(90deg, $color-resolution-blue 0%, $color-resolution-blue 0.01%, $color-resolution-blue-light 39.11%, $color-pompadour 75.5%, $color-venetian-red 100%);
+$gradient-hero-tablet-mobile: linear-gradient(90deg, $color-resolution-blue 0%, $color-resolution-blue 0.01%, $color-resolution-blue-light 39.76%, $color-pompadour 75.5%, $color-venetian-red 100%);
+$gradient-button: linear-gradient(97deg, $color-torch-red 17.6%, $color-cobalt 95.31%);
+$gradient-border-tickets-promo: linear-gradient(to bottom right, $color-crimson, $color-smalt);
+$gradient-digit: linear-gradient(128deg, $color-crimson 0%, $color-cobalt-light 45.58%);
+
+
+
+$tf-default: ease;
+$trans-default: 0.3s $tf-default;
+
+
+
+$ff-roboto-condensed: "Roboto Condensed", "Arial", sans-serif;
+$ff-alumni-sans: "Alumni Sans", "Arial", sans-serif;
+
+
+
 $vp-319: 319px;
 $vp-320: 320px;
 $vp-450: 450px;
