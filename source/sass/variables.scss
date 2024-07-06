@@ -5,20 +5,13 @@ $color-link-water: #c8c9cc;
 $color-spindle: #b6bdcc;
 $color-chambray: #495a7d;
 $color-black-russian: #030a1a;
+$color-default-black: #000000;
 $color-sapphire: #102654;
 $color-resolution-blue: #1C3374;
-$color-cobalt: #003EB7;
-$color-cobalt-light: #0041ca;
-$color-smalt: #00359f;
 $color-persian-blue: #2E35AC;
 $color-egyptian-blue: #103AAE;
-$color-resolution-blue: #1c3477;
-$color-resolution-blue-light: #1a3578;
-$color-torch-red: #ED0233;
-$color-crimson: #d10a42;
 $color-torch-red-light: #ff121f;
-$color-venetian-red: #b4022a;
-$color-pompadour: #73184b;
+
 
 
 $color-sapphire-02: rgba(16, 38, 84, 0.2);
@@ -32,6 +25,18 @@ $color-crimson-02: rgba(209, 10, 66, 0.2);
 
 
 
+$color-torch-red: #ED0233;
+$color-crimson: #d10a42;
+$color-venetian-red: #b4022a;
+$color-pompadour: #73184b;
+$color-cobalt-light: #0041ca;
+$color-cobalt: #003EB7;
+$color-smalt: #00359f;
+$color-resolution-blue-light: #1a3578;
+$color-resolution-blue: #1c3477;
+
+
+
 $gradient-hero: linear-gradient(90deg, $color-resolution-blue 0%, $color-resolution-blue 0.01%, $color-resolution-blue-light 39.11%, $color-pompadour 75.5%, $color-venetian-red 100%);
 $gradient-hero-tablet-mobile: linear-gradient(90deg, $color-resolution-blue 0%, $color-resolution-blue 0.01%, $color-resolution-blue-light 39.76%, $color-pompadour 75.5%, $color-venetian-red 100%);
 $gradient-button: linear-gradient(97deg, $color-torch-red 17.6%, $color-cobalt 95.31%);
@@ -42,6 +47,7 @@ $gradient-digit: linear-gradient(128deg, $color-crimson 0%, $color-cobalt-light 
 
 $tf-default: ease;
 $trans-default: 0.3s $tf-default;
+$fz-default: 16px;
 
 
 

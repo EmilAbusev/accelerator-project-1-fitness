@@ -1,8 +1,48 @@
 .header {
-  background: $color-dark-cerulean-05;
+  background: $gradient-hero;
+  color: $color-default-white;
+  padding-bottom: 120px;
 
-  .container {
+  @include vp-1365 {
+    background: $gradient-hero-tablet-mobile;
+    padding-bottom: 100px;
+  }
+  @include vp-767 {
+    padding-bottom: 39px;
+  }
+
+
+   .container {
     padding: 0 93px;
+
+    @include vp-1365 {
+      padding: 0 35px;
+    }
+    @include vp-767 {
+      padding: 0 5px;
+    }
+  }
 }
 
+.header__wrapper {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.header__main-navigation {
+  margin-top: 23px;
+  margin-bottom: 17px;
+
+  @include vp-1365 {
+    margin-top: 22px;
+    margin-bottom: 18px;
+  }
+  @include vp-767 {
+    margin-top: 7px;
+    margin-bottom: 7px;
+  }
+}
+
+.header__hero {
+  margin: 0 auto;
 }
