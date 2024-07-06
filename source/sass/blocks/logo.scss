@@ -1,0 +1,18 @@
+.logo {
+margin-left: 5px;
+padding: 6px;
+width: 140px;
+height: 46px;
+
+@include vp-1365 {
+  width: 121px;
+  height: 44px;
+}
+
+@include vp-767 {
+  margin-left: 4px;
+  width: 112px;
+  height: 42px;
+}
+
+}
