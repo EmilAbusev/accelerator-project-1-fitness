@@ -4,8 +4,14 @@ padding: 6px;
 width: 140px;
 height: 46px;
 
+&:hover,
+&:focus,
+&:active {
+  outline: none;
+}
+
 @include vp-1365 {
-  width: 121px;
+  width: 120px;
   height: 44px;
 }
 

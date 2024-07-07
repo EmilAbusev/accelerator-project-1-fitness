@@ -12,6 +12,29 @@
   user-select: none;
   cursor: pointer;
 
+  &:hover:not([disabled]),
+  &:focus:not([disabled]) {
+    background-color: $color-default-white;
+    color: $color-egyptian-blue;
+  }
+
+  &:focus:not([disabled]) {
+    outline: 2px solid $color-default-black;
+  }
+
+  &:active:not([disabled]) {
+    color: $color-sapphire;
+    background-color: $color-default-white;
+    outline: none;
+  }
+
+  &[disabled] {
+    color: $color-link-water;
+    opacity: 0.5;
+    pointer-events: none;
+    cursor: default;
+  }
+
   &--hero {
     @include vp-1365 {
       padding: 20px;

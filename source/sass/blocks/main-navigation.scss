@@ -15,6 +15,7 @@
 
 .main-navigation__link {
   display: block;
+  position: relative;
   margin: 0;
   padding: 8px 10px;
   padding-right: 11px;
@@ -23,9 +24,45 @@
   font-size: 26px;
   color: $color-default-white;
 
+  &::before {
+    position: absolute;
+    bottom: 6px;
+    right: 10px;
+    height: 1px;
+    background-color: $color-sapphire;
+    width: calc(100% - 20px);
+    transform: scale(0);
+    content: "";
+  }
+
+  &:hover:not([disabled]) {
+    color: $color-resolution-blu-05;
+  }
+
+  &:focus:not([disabled]) {
+    color: $color-resolution-blue;
+    outline: none;
+  }
+
+    &:active:not([disabled]) {
+      color: $color-sapphire;
+
+      &::before {
+        transform: scale(1);
+      }
+    }
+
+  &[disabled] {
+    color: $color-ghost-white;
+    opacity: 0.5;
+    pointer-events: none;
+    cursor: default;
+  }
+
+
   @include vp-1365 {
     padding-top: 5px;
-    padding-right: 11px;
+    padding-right: 10px;
     line-height: 24px;
     font-size: 24px;
   }
