@@ -1,18 +1,41 @@
 .information {
   position: relative;
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+  }
 }
 
 
 .information__image {
+  display: flex;
+  flex-direction: column;
 }
 
 .information__video {
   position: absolute;
   top: 285px;
-  right: 400px  ;
+  right: 400px;
   width: 360px;
   height: 230px;
   background-color: $color-sapphire-05;
+
+  @include vp-1365 {
+    top: 260px;
+    right: 204px;
+    width: 270px;
+    height: 170px
+  }
+
+  @include vp-767 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 170px;
+  }
 
   &--background {
     &::before {
@@ -40,20 +63,25 @@
 .information__button {
   position: absolute;
   width: 72px;
-height: 72px;
+  height: 72px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 18px;
   border: none;
   border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+
+
 
   &::before {
     position: absolute;
-    width: 72px;
-    height: 72px;
     top: 0;
     left: 0;
+    width: 72px;
+    height: 72px;
     border-radius: 50%;
     background: $gradient-button;
     z-index: 1;
@@ -73,6 +101,63 @@ height: 72px;
     z-index: 2;
   }
 
+  &:hover:not([disabled])::before {
+    background: $color-default-white;
+  }
+
+  &:focus:not([disabled])::before {
+    background: $color-link-water;
+  }
+
+  &:active:not([disabled])::before {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 58px;
+    height: 58px;
+    background: $color-default-white
+  }
+
+  &:hover:not([disabled])::after {
+    border: 2px solid $color-sapphire-06;
+    opacity: 60%;
+  }
+
+  &:focus:not([disabled])::after {
+    border: 2px solid $color-sapphire;
+    opacity: 100%;
+  }
+
+  &:active:not([disabled])::after {
+    border: 2px solid $color-sapphire;
+  }
+
+
+  @include vp-1365 {
+
+    &::before {
+      top: 10px;
+      left: 10px;
+      width: 52px;
+      height: 52px;
+    }
+
+    &::after {
+      bottom: 0;
+      right: 0;
+      width: 72px;
+      height: 72px;
+    }
+
+    &:active:not([disabled])::before {
+      width: 39px;
+      height: 39px;
+      top: 51%;
+      left: 49%;
+    }
+  }
+
+
   svg {
     position: absolute;
     bottom: 28px;
@@ -81,6 +166,46 @@ height: 72px;
     height: 17px;
     z-index: 2;
     fill: $color-default-white;
+
+    @include vp-1365 {
+      bottom: 30px;
+      right: 29px;
+      width: 12px;
+      height: 12px;
+    }
+
+    @include vp-767 {}
   }
 
+  &:hover svg {
+    fill: $color-sapphire-06;
+  }
+
+  &:focus svg,
+  &:active svg {
+    fill: $color-sapphire;
+  }
+
+  &[disabled] {
+    pointer-events: none;
+    cursor: default;
+
+    &::before {
+      background: $color-default-white
+    }
+
+    &::after {
+      border: 2px solid $color-sapphire-06;
+    }
+
+    & svg {
+      fill: $color-sapphire-06;
+    }
+  }
+
+}
+
+.information__button-player {
+  width: 100%;
+  height: 100%;
 }
