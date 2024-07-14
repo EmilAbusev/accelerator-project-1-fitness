@@ -14,10 +14,10 @@ body {
 
 html {
   font-style: normal;
-  font-weight: 400;
-  font-size: $fz-default;
-  line-height: 24px;
   font-family: $ff-roboto-condensed;
+  font-weight: $fw-default;
+  font-size: $fs-default;
+  line-height: $lh-default;
   color: $color-sapphire;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

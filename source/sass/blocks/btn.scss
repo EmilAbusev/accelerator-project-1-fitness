@@ -46,4 +46,10 @@
       padding: 23px;
     }
   }
+
+  &--subscription {
+    padding: 25px 59px;
+    border: 2px solid $color-sapphire;
+    color: $color-sapphire;
+  }
 }

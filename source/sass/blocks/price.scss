@@ -1,0 +1,34 @@
+.price {
+
+  .container {
+    background-color: $color-ghost-white;
+  }
+}
+
+.price__wrapper {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 100px 0;
+  padding-bottom: 167px;
+}
+
+.price__subscription {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  z-index: 2;
+}
+
+
+.price__image {
+  position: absolute;
+  bottom: 66px;
+  right: 1px;
+  z-index: 1;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
