@@ -4,9 +4,11 @@
 // import 'swiper/css';
 
 import {reproduceYoutubeVideo} from './modules/inline-youtube/init-inline-youtube';
+import {onTabClikc} from './modules/tabs/tabs-subscription';
 
 window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     reproduceYoutubeVideo();
+    onTabClikc();
   });
 });
