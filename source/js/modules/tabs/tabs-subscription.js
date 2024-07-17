@@ -7,9 +7,9 @@ tabsButton.forEach(onTabClikc);
 
 function onTabClikc(item) {
   item.addEventListener('click', () => {
-    let currentButton = item;
-    let tabId = currentButton.getAttribute('data-tab');
-    let currentTab = document.querySelector(tabId);
+    const currentButton = item;
+    const tabId = currentButton.getAttribute('data-tab');
+    const currentTab = document.querySelector(tabId);
 
     if (!currentButton.classList.contains('subscription__control-active')) {
 
