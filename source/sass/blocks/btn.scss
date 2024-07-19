@@ -39,13 +39,12 @@
     @include vp-1365 {
       padding: 20px;
     }
-  }
 
-  &--hero {
     @include vp-767 {
       padding: 23px;
     }
   }
+
 
   &--subscription {
     padding: 25px 59px;
@@ -63,7 +62,7 @@
 
   &:hover:not([disabled]) {
     border: 2px solid $color-default-white;
-    }
+  }
 
   &:focus:not([disabled]) {
     outline: none;
@@ -81,5 +80,10 @@
     opacity: 0.3;
     pointer-events: none;
     cursor: default;
+  }
+
+  &--games {
+    padding: 27px 56px;
+    padding-bottom: 24px;
   }
 }

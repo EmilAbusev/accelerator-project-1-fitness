@@ -1,24 +1,23 @@
 .logo {
-margin-left: 5px;
-padding: 6px;
-width: 140px;
-height: 46px;
+  margin-left: 5px;
+  padding: 6px;
+  width: 140px;
+  height: 46px;
 
-&:hover,
-&:focus,
-&:active {
-  outline: none;
-}
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+  }
 
-@include vp-1365 {
-  width: 120px;
-  height: 44px;
-}
+  @include vp-1365 {
+    width: 120px;
+    height: 44px;
+  }
 
-@include vp-767 {
-  margin-left: 4px;
-  width: 112px;
-  height: 42px;
-}
-
+  @include vp-767 {
+    margin-left: 4px;
+    width: 112px;
+    height: 42px;
+  }
 }

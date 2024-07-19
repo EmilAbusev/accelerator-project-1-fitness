@@ -19,9 +19,9 @@
   grid-template-columns: 29.5% 70.4%;
   grid-template-rows: auto 1fr auto;
   grid-template-areas:
-    ". paragraph"
+    ".             paragraph"
     "services-list title"
-    ". button";
+    ".             button";
   gap: 0;
   justify-self: end;
   max-width: 385px;
@@ -142,7 +142,6 @@
 }
 
 .hero__image {
-
   @include vp-1365 {
     max-width: 324px;
     max-height: 390px;
