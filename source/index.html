@@ -129,7 +129,8 @@
               <h2>Абонементы</h2>
               <ul class="subscription__control-list">
                 <li class="subscription__control-item">
-                  <button class="subscription__control-button" type="button" data-tab="#toggl_1">1 месяц</button>
+                  <button class="subscription__control-button control-active" type="button"
+                    data-tab="#toggl_1">1 месяц</button>
                 </li>
                 <li class="subscription__control-item">
                   <button class="subscription__control-button" type="button" data-tab="#toggl_2">6 месяцев</button>
@@ -139,7 +140,7 @@
                 </li>
               </ul>
               <div class="subscription__wrapper">
-                <ul class="subscription__description-list" id="toggl_1">
+                <ul class="subscription__description-list is-active" id="toggl_1">
                   <li class="subscription__description-item">
                     <h3>С тренером</h3>
                     <p>12 занятий</p>
@@ -211,16 +212,20 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="price__image">
-          <picture>
-            <source type="image/webp" media="(max-width: 1365px)" width="327" height="423" srcset="./img/content/price/rogue-discs-tablet@1x.webp 1x, ./img/content/price/rogue-discs-tablet@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 1366px)" width="287" height="494" srcset="./img/content/price/rogue-discs-desktop@1x.webp 1x, ./img/content/price/rogue-discs-desktop@2x.webp 2x">
-            <source type="image/png" media="(max-width: 1365px)" width="327" height="423" srcset="./img/content/price/rogue-discs-tablet@1x.png 1x, ./img/content/price/rogue-discs-tablet@2x.png 2x">
-            <source type="image/png" media="(min-width: 1366px)" width="287" height="494" srcset="./img/content/price/rogue-discs-desktop@1x.png 1x, ./img/content/price/rogue-discs-desktop@2x.png 2x">
-            <img src="./img/content/price/rogue-discs-desktop@1x.png" width="287" height="494"
+          <div class="price__image">
+            <picture>
+              <source type="image/webp" media="(max-width: 1365px)" width="327" height="423"
+              srcset="./img/content/price/rogue-discs-tablet@1x.webp 1x, ./img/content/price/rogue-discs-tablet@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1366px)" width="287" height="494"
+              srcset="./img/content/price/rogue-discs-desktop@1x.webp 1x, ./img/content/price/rogue-discs-desktop@2x.webp 2x">
+              <source type="image/png" media="(max-width: 1365px)" width="327" height="423"
+              srcset="./img/content/price/rogue-discs-tablet@1x.png 1x, ./img/content/price/rogue-discs-tablet@2x.png 2x">
+              <source type="image/png" media="(min-width: 1366px)" width="287" height="494"
+              srcset="./img/content/price/rogue-discs-desktop@1x.png 1x, ./img/content/price/rogue-discs-desktop@2x.png 2x">
+              <img src="./img/content/price/rogue-discs-desktop@1x.png" width="287" height="494"
               srcset="./img/content/price/rogue-discs-desktop@2x.png" alt="Изображение красных тренажерных дисков">
-          </picture>
+            </picture>
+          </div>
         </div>
       </section>
     </main>

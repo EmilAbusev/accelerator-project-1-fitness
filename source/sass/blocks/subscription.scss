@@ -27,7 +27,7 @@
   margin: 0 auto;
   margin-top: 5px;
   padding: 0;
-  width: 351px;
+  width: 350px;
   list-style: none;
 
   &::before {
@@ -57,7 +57,7 @@
   position: relative;
   border: none;
   padding: 15px 0;
-  padding-bottom: 8px;
+  padding-bottom: 10px;
   background-color: transparent;
   line-height: 20px;
   font-size: 20px;
@@ -95,13 +95,13 @@
   }
 
   @include vp-1365 {
-    padding-bottom: 6px;
+    padding-bottom: 8px;
     line-height: 18px;
     font-size: 18px;
   }
 
   @include vp-767 {
-    padding-bottom: 7px;
+    padding-bottom: 6px;
     line-height: 16px;
     font-size: 16px;
   }
@@ -139,7 +139,7 @@
 
   @include vp-767 {
     width: 290px;
-    gap: 35px;
+    gap: 36px;
   }
 }
 
@@ -246,7 +246,7 @@
     }
 
     &::after {
-      margin-left: 12px;
+      margin-left: 15px;
       font-weight: 700;
       font-size: 60px;
       line-height: 90px;
@@ -293,11 +293,11 @@
   }
 
   @include vp-767 {
-    margin-top: 19px;
+    margin-top: 18px;
   }
 }
 
-.subscription__control-active {
+.control-active {
   color: $color-sapphire;
   border-bottom: 2px solid $color-crimson;
 }

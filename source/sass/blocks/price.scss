@@ -1,4 +1,5 @@
 .price {
+  position: relative;
 
   .container {
     background-color: $color-ghost-white;
@@ -8,16 +9,16 @@
 .price__wrapper {
   max-width: 1180px;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 98px 0;
   padding-bottom: 102px;
 
   @include vp-1365 {
-    padding-top: 61px;
+    padding-top: 59px;
     padding-bottom: 60px;
   }
 
   @include vp-767 {
-    padding-top: 40px;
+    padding-top: 41px;
     padding-bottom: 40px;
   }
 }

@@ -11,17 +11,17 @@ function onTabClikc(item) {
     const tabId = currentButton.getAttribute('data-tab');
     const currentTab = document.querySelector(tabId);
 
-    if (!currentButton.classList.contains('subscription__control-active')) {
+    if (!currentButton.classList.contains('control-active')) {
 
       tabsButton.forEach((button) => {
-        button.classList.remove('subscription__control-active');
+        button.classList.remove('control-active');
       });
 
       tabsItems.forEach((list) => {
         list.classList.remove('is-active');
       });
 
-      currentButton.classList.add('subscription__control-active');
+      currentButton.classList.add('control-active');
       currentTab.classList.add('is-active');
     }
   });
