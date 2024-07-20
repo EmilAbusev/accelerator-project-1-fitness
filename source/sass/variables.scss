@@ -1,6 +1,6 @@
 $color-default-white: #ffffff;
-$color-ghost-white: #F8F9FC;
-$color-whisper: #E8E8E8;
+$color-ghost-white: #f8f9fc;
+$color-whisper: #e8e8e8;
 $color-link-water: #c8c9cc;
 $color-spindle: #b6bdcc;
 $color-grey: #787878;
@@ -8,11 +8,10 @@ $color-chambray: #495a7d;
 $color-black-russian: #030a1a;
 $color-default-black: #000000;
 $color-sapphire: #102654;
-$color-resolution-blue: #1C3374;
-$color-persian-blue: #2E35AC;
-$color-egyptian-blue: #103AAE;
+$color-resolution-blue: #1c3374;
+$color-persian-blue: #2e35ac;
+$color-egyptian-blue: #103aae;
 $color-torch-red-light: #ff121f;
-
 
 $color-sapphire-02: rgba(16, 38, 84, 0.2);
 $color-sapphire-03: rgba(16, 38, 84, 0.3);
@@ -26,17 +25,15 @@ $color-resolution-blu-05: rgba(28, 51, 116, 0.5);
 $color-grey-02: rgba(120, 120, 120, 0.2);
 $color-crimson-02: rgba(209, 10, 66, 0.2);
 
-
-$color-torch-red: #ED0233;
+$color-torch-red: #ed0233;
 $color-crimson: #d10a42;
 $color-venetian-red: #b4022a;
 $color-pompadour: #73184b;
 $color-cobalt-light: #0041ca;
-$color-cobalt: #003EB7;
+$color-cobalt: #003eb7;
 $color-smalt: #00359f;
 $color-resolution-blue-light: #1a3578;
 $color-resolution-blue: #1c3477;
-
 
 
 $gradient-hero: linear-gradient(90deg, $color-resolution-blue 0%, $color-resolution-blue 0.01%, $color-resolution-blue-light 39.11%, $color-pompadour 75.5%, $color-venetian-red 100%);
@@ -46,7 +43,6 @@ $gradient-border-tickets-promo: linear-gradient(to bottom right, $color-crimson,
 $gradient-digit: linear-gradient(128deg, $color-crimson 0%, $color-cobalt-light 45.58%);
 
 
-
 $tf-default: ease;
 $trans-default: 0.3s $tf-default;
 $fw-default: 400;
@@ -54,10 +50,8 @@ $lh-default: 24px;
 $fs-default: 16px;
 
 
-
 $ff-roboto-condensed: "Roboto Condensed", "Arial", sans-serif;
 $ff-alumni-sans: "Alumni Sans", "Arial", sans-serif;
-
 
 
 $vp-319: 319px;
