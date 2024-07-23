@@ -2,20 +2,21 @@
   display: grid;
   grid-template-columns: 43.1% 56.8%;
   margin: 0 auto;
-  padding-top: 100px;
+  padding-top: 101px;
   padding-bottom: 60px;
   max-width: 1160px;
   justify-content: center;
 
   @include vp-1365 {
     padding-top: 60px;
-    grid-template-columns: 44.2% 55.8%;
+    grid-template-columns: 44.1% 55.7%;
   }
 
   @include vp-767 {
     display: flex;
     flex-direction: column;
     padding-top: 25px;
+    padding-bottom: 25px;
   }
 }
 
@@ -24,20 +25,21 @@
   flex-direction: column;
   padding: 97px 80px;
   padding-top: 59px;
+  padding-left: 78px;
   max-width: 500px;
   background-color: $color-torch-red;
   color: $color-default-white;
 
   @include vp-1365 {
-    padding: 40px 40px;
-    padding-top: 37px;
+    padding: 39px 39px;
+    padding-top: 38px;
     padding-right: 33px;
     max-width: 100%;
   }
 
   @include vp-767 {
-    padding-top: 37px;
-    padding-right: 40px;
+    padding: 37px 40px;
+    padding-bottom: 40px;
     max-width: 100%;
   }
 
@@ -49,7 +51,7 @@
     font-size: 18px;
 
     @include vp-1365 {
-      margin-top: 10px;
+      margin-top: 11px;
     }
 
     @include vp-767 {
@@ -68,27 +70,29 @@
   letter-spacing: 0.1px;
 
   @include vp-1365 {
-    margin-top: 10px;
+    margin-top: 9px;
     margin-right: 7px;
   }
 
   @include vp-767 {
     margin-top: 16px;
     margin-right: 0;
-    letter-spacing: 0.3px;
   }
 }
 
 .games__image-wrapper {
-  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
   background-color: $color-dark-cerulean-05;
 
   img {
     width: 100%;
-    max-height: 100%;
+    height: 100%;
 
     @include vp-767 {
       width: 100%;
+      object-fit: cover;
+      max-height: 290px;
     }
   }
 }

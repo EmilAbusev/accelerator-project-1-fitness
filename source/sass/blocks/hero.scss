@@ -1,8 +1,8 @@
 .hero {
   max-width: 1160px;
   display: grid;
-  grid-template-columns: 46% 50.1%;
-  gap: 54px;
+  grid-template-columns: 45.8% 50.1%;
+  gap: 56px;
 
   @include vp-1365 {
     grid-template-columns: 47.9% 47.7%;
@@ -16,7 +16,7 @@
 
 .hero__wrepper {
   display: grid;
-  grid-template-columns: 29.5% 70.4%;
+  grid-template-columns: 29.2% 70.1%;
   grid-template-rows: auto 1fr auto;
   grid-template-areas:
     ".             paragraph"
@@ -27,14 +27,14 @@
   max-width: 385px;
   align-items: end;
   text-align: end;
-  padding-bottom: 52px;
+  padding-bottom: 54px;
   padding-top: 51px;
 
   @include vp-1365 {
     max-width: 326px;
     grid-template-columns: 35.2% 64.8%;
     padding-top: 32px;
-    padding-bottom: 31px;
+    padding-bottom: 32px;
   }
 
   @include vp-767 {
@@ -56,7 +56,7 @@
     font-weight: 800;
     line-height: 110px;
     font-size: 92px;
-    letter-spacing: 4.4px;
+    letter-spacing: 3.4px;
 
     @include vp-1365 {
       padding-bottom: 50px;
@@ -96,15 +96,17 @@
 }
 
 .hero__list {
+  display: flex;
+  flex-direction: column;
   align-self: center;
   grid-area: services-list;
   list-style: none;
   margin: 0;
-  margin-top: 14px;
+  margin-top: 13px;
   padding: 0;
 
   @include vp-1365 {
-    margin-top: 15px;
+    margin-top: 14px;
   }
 
   @include vp-767 {
@@ -131,7 +133,7 @@
   letter-spacing: 0.1px;
 
   @include vp-1365 {
-    margin-left: 26px;
+    margin-left: 25px;
   }
 
   @include vp-767 {

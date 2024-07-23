@@ -31,7 +31,7 @@
 
   &::before {
     position: absolute;
-    bottom: 0;
+    bottom: 1px;
     left: 0;
     width: 100%;
 
@@ -41,7 +41,7 @@
   }
 
   @include vp-1365 {
-    margin-top: 21px;
+    margin-top: 22px;
     width: 310px;
   }
 
@@ -56,7 +56,7 @@
   position: relative;
   border: none;
   padding: 15px 0;
-  padding-bottom: 10px;
+  padding-bottom: 8px;
   background-color: transparent;
   line-height: 20px;
   font-size: 20px;
@@ -108,7 +108,7 @@
 .subscription__wrapper {
   max-width: 1160px;
   margin: 0 auto;
-  margin-top: 40px;
+  margin-top: 41px;
 
   @include vp-1365 {
     margin-top: 45px;
@@ -118,6 +118,7 @@
     margin-top: 30px;
   }
 }
+
 
 .subscription__description-list {
   display: none;
@@ -132,7 +133,7 @@
   @include vp-1365 {
     flex-direction: column;
     width: 620px;
-    gap: 40px;
+    gap: 42px;
   }
 
   @include vp-767 {
@@ -145,12 +146,43 @@
   display: flex;
 }
 
+.subscription__description-item:first-child,
+.subscription__description-item:last-child {
+  padding: 57px 20px;
+  padding-bottom: 60px;
+
+  @include vp-1365 {
+    padding-top: 56px;
+    padding-bottom: 59px;
+  }
+
+  @include vp-767 {
+    padding-top: 45px;
+    padding-bottom: 44px;
+  }
+
+  span {
+    margin-top: 77px;
+
+    @include vp-1365 {
+      margin-top: 83px;
+    }
+
+    @include vp-767 {
+      margin-top: 65px;
+    }
+  }
+
+  .subscription__description-button {
+    margin-top: 18x;
+  }
+}
 
 .subscription__description-item {
   display: flex;
   flex-direction: column;
   padding: 58px 20px;
-  padding-bottom: 58px;
+  padding-bottom: 60px;
   width: 360px;
   align-items: center;
   background-color: $color-default-white;
@@ -171,7 +203,7 @@
 
 
   @include vp-1365 {
-    padding-top: 58px;
+    padding-top: 56px;
     width: 380px;
   }
 
@@ -200,7 +232,7 @@
 
   p {
     margin: 0;
-    margin-top: 18px;
+    margin-top: 17px;
     font-weight: 300;
     line-height: 24px;
     font-size: 16px;
@@ -220,7 +252,7 @@
     display: flex;
     position: relative;
     margin: 0 auto;
-    margin-top: 76px;
+    margin-top: 78px;
     max-width: 230px;
     font-weight: 700;
     line-height: 90px;
@@ -231,7 +263,7 @@
 
     &::before {
       position: absolute;
-      bottom: -1px;
+      bottom: 1px;
       right: -17px;
       z-index: -1;
       font-size: 100px;
