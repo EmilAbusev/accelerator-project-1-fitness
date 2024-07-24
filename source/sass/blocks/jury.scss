@@ -3,7 +3,6 @@
   position: relative;
   padding-top: 100px;
   padding-bottom: 100px;
-  max-width: 1160px;
 
   @include vp-1365 {
     padding-top: 30px;
@@ -33,22 +32,43 @@
 }
 
 .jury__button {
+  display: flex;
   position: absolute;
-  max-width: 23px;
-  max-height: 35px;
+  align-items: center;
+
+  &:hover:not([disabled]) {
+    border: 1px solid $color-sapphire;
+  }
+
+  &:focus:not([disabled]) {
+    background: $color-whisper;
+    outline: none;
+  }
+
+  &:active:not([disabled]) {
+    background: $color-sapphire;
+
+    svg {
+      color: $color-default-white;
+    }
+  }
 
   @include vp-767 {
     display: none;
   }
 
   &.swiper-button-prev {
-    bottom: 229px;
-    left: -56px;
+    bottom: 236px;
+    left: -58px;
     z-index: 1;
 
     @include vp-1365 {
       bottom: 233px;
       left: 2px;
+    }
+
+    svg {
+
     }
   }
 
@@ -62,12 +82,17 @@
       bottom: 233px;
       right: 2px;
     }
+
+    svg {
+
+    }
   }
 
   & svg {
-    width: 23px;
-    height: 35px;
-    stroke: $color-sapphire;
+    position: absolute;
+    left: 17px;
+    color: $color-sapphire;
     fill: none;
   }
+
 }

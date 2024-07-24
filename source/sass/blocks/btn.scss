@@ -100,4 +100,12 @@
       padding-bottom: 22px;
     }
   }
+
+  &--jury {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    cursor: pointer;
+  }
 }
