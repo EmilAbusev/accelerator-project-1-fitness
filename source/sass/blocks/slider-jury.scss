@@ -1,3 +1,7 @@
+.slider-jury {
+  max-width: 1160px;
+}
+
 .slider-jury.swiper {
   margin-top: 46px;
 
@@ -13,6 +17,7 @@
 }
 
 .slider-jury__wrapper {
+  min-width: 0;
 }
 
 .slider-jury__cards {
