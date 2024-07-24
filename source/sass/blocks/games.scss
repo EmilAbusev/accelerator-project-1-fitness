@@ -1,22 +1,23 @@
 .games__wrapper {
-  display: grid;
-  grid-template-columns: 43.1% 56.8%;
+  display: flex;
   margin: 0 auto;
-  padding-top: 101px;
+  padding-top: 100px;
   padding-bottom: 60px;
   max-width: 1160px;
   justify-content: center;
+  background-color: $color-default-white;
 
   @include vp-1365 {
+    margin-top: 2px;
     padding-top: 60px;
-    grid-template-columns: 44.1% 55.7%;
+    max-width: 678px;
   }
 
   @include vp-767 {
-    display: flex;
-    flex-direction: column;
+    margin-top: 0;
     padding-top: 25px;
     padding-bottom: 25px;
+    flex-direction: column;
   }
 }
 
@@ -31,10 +32,10 @@
   color: $color-default-white;
 
   @include vp-1365 {
-    padding: 39px 39px;
+    padding: 40px 39px;
     padding-top: 38px;
     padding-right: 33px;
-    max-width: 100%;
+    max-width: 300px;
   }
 
   @include vp-767 {
@@ -46,16 +47,18 @@
 
   h3 {
     margin: 0;
-    margin-top: 28px;
+    margin-top: 29px;
     font-weight: 300;
     font-size: 18px;
 
     @include vp-1365 {
-      margin-top: 11px;
+      margin-top: 12px;
+      margin-left: 1px;
     }
 
     @include vp-767 {
       margin-top: 16px;
+      margin-left: 0;
       line-height: 20px;
       font-size: 16px;
     }
@@ -72,17 +75,19 @@
   @include vp-1365 {
     margin-top: 9px;
     margin-right: 7px;
+    margin-left: 1px;
+    letter-spacing: normal;
   }
 
   @include vp-767 {
     margin-top: 16px;
     margin-right: 0;
+    margin-left: 0;
   }
 }
 
 .games__image-wrapper {
   max-width: 100%;
-  max-height: 100%;
   background-color: $color-dark-cerulean-05;
 
   img {
