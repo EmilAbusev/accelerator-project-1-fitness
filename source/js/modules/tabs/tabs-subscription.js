@@ -2,30 +2,29 @@ const tabsButton = document.querySelectorAll('.subscription__control-button');
 const tabsItems = document.querySelectorAll('.subscription__description-list');
 
 
-tabsButton.forEach(onTabClikc);
+const onTabClikc = () => {
+  tabsButton.forEach((item) => {
+    item.addEventListener('click', () => {
+      const currentButton = item;
+      const tabId = currentButton.getAttribute('data-tab');
+      const currentTab = document.querySelector(tabId);
 
+      if (!currentButton.classList.contains('control-active')) {
 
-function onTabClikc(item) {
-  item.addEventListener('click', () => {
-    const currentButton = item;
-    const tabId = currentButton.getAttribute('data-tab');
-    const currentTab = document.querySelector(tabId);
+        tabsButton.forEach((button) => {
+          button.classList.remove('control-active');
+        });
 
-    if (!currentButton.classList.contains('control-active')) {
+        tabsItems.forEach((list) => {
+          list.classList.remove('is-active');
+        });
 
-      tabsButton.forEach((button) => {
-        button.classList.remove('control-active');
-      });
-
-      tabsItems.forEach((list) => {
-        list.classList.remove('is-active');
-      });
-
-      currentButton.classList.add('control-active');
-      currentTab.classList.add('is-active');
-    }
+        currentButton.classList.add('control-active');
+        currentTab.classList.add('is-active');
+      }
+    });
   });
-}
+};
 
 document.querySelector('.subscription__control-button').click();
 
