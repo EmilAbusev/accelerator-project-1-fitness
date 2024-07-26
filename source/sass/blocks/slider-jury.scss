@@ -27,6 +27,18 @@
   background-color: $color-dark-cerulean-05;
   width: 260px;
 
+  &:hover,
+  &:focus {
+    h3 {
+      display: none;
+    }
+
+    .slider-jury__description {
+      opacity: 1;
+      scale: (1);
+    }
+  }
+
 
   h3 {
     position: absolute;
@@ -62,16 +74,19 @@
 
 
 .slider-jury__description {
-  display: none;
+  display: flex;
   flex-direction: column;
   position: absolute;
   top: 0;
-  padding: 20px;
-  width: 290px;
+  padding: 45px 30px;
+  width: 100%;
+  height: 100%;
   background: $color-sapphire-089;
   align-items: center;
   text-align: center;
+  overflow-y: scroll;
   z-index: 2;
+  opacity: 0;
 }
 
 .slider-jury__description-title {
@@ -85,18 +100,38 @@
 
   p {
     margin: 0;
+    margin-top: 8px;
     font-weight: 300;
     font-size: 16px;
+    color: $color-spindle;
   }
 }
 
 .slider-jury__description-list {
+  display: flex;
+  flex-direction: column;
   margin: 0;
+  margin-left: 20px;
+  margin-top: 33px;
   padding: 0;
+  gap: 12px;
   list-style: none;
+  text-align: start;
 }
 
 .slider-jury__description-item {
+  position: relative;
   font-size: 14px;
   line-height: 22px;
+
+  &::before {
+    position: absolute;
+    top: 8px;
+    left: -14px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: $color-default-white;
+    content: "";
+  }
 }
