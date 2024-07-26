@@ -42,8 +42,8 @@
   @include vp-767 {
     flex-direction: column;
     align-items: flex-start;
-    gap: 11px;
-    padding: 17px 0 45px;
+    gap: 30px;
+    padding: 40px 15px;
   }
 
   ul {
@@ -99,7 +99,7 @@
   @include vp-767 {
     min-width: 310px;
     margin-top: 4px;
-    gap: 2px 15px;
+    gap: 2px 35px;
   }
 }
 
@@ -170,13 +170,14 @@
   @include vp-1365 {
     max-width: 130px;
     margin-bottom: 5px;
+    gap: 15px;
   }
 
   @include vp-767 {
-    align-self: center;
-    margin: 34px 0 0;
-    margin-right: 0;
-    margin-bottom: 0;
+    align-self: start;
+    margin: 0;
+    margin-left: 15px;
+    gap: 20px;
   }
 }
 
