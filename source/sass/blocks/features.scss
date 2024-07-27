@@ -18,7 +18,8 @@
   }
 
   @include vp-767 {
-    padding: 71px 0 49px;
+    padding: 40px 0;
+    padding-bottom: 49px;
   }
 }
 
@@ -42,8 +43,7 @@
   @include vp-767 {
     font-size: 32px;
     line-height: 32px;
-    letter-spacing: 0.96px;
-    margin-bottom: 54px;
+    margin-bottom: 39px;
     padding: 0 15px;
   }
 }
@@ -63,7 +63,8 @@
   }
 
   @include vp-767 {
-    grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
     gap: 34px;
     text-align: center;
   }
@@ -121,16 +122,31 @@
   }
 
   @include vp-767 {
+    display: flex;
+    flex-direction: column;
     max-width: 100%;
     width: 100%;
-    grid-template-columns: 1fr;
-    gap: 0;
   }
 }
 
 .features__item .features__item-text {
   margin-right: -11px;
 }
+
+.features__item:nth-child(1),
+.features__item:nth-child(2),
+.features__item:nth-child(4),
+.features__item:nth-child(5) {
+
+  @include vp-767 {
+    margin: 0;
+
+    .features__item-text {
+      margin: 0;
+    }
+  }
+}
+
 
 .features__item:nth-child(2),
 .features__item:nth-child(5) {
@@ -158,6 +174,14 @@
       p {
         padding-top: 11px;
       }
+    }
+  }
+
+  @include vp-767 {
+    margin: 0;
+
+    .features__item-text {
+      margin: 0;
     }
   }
 }
@@ -191,12 +215,15 @@
   }
 
   @include vp-767 {
-    grid-column: 1/2;
-    grid-row: 3/4;
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    margin-top: 1px;
-    margin-bottom: 7px;
-    padding: 29px 46px 39px;
+    height: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 30px 45px;
+    padding-bottom: 39px;
   }
 
   p {
@@ -210,8 +237,7 @@
     }
 
     @include vp-767 {
-      margin-top: 1px;
-      margin-bottom: 6px;
+      margin: 0;
       font-size: 64px;
       line-height: 64px;
     }
@@ -234,7 +260,8 @@
     @include vp-767 {
       font-size: 22px;
       line-height: 22px;
-      margin-bottom: 20px;
+      margin: 0;
+      margin-top: 6px;
     }
   }
 
@@ -249,6 +276,7 @@
     }
 
     @include vp-767 {
+      margin-top: 20px;
       font-size: 14px;
       font-weight: 300;
       line-height: 22px;
@@ -264,12 +292,25 @@
 
   @include vp-767 {
     gap: 11px;
-    padding: 0 55px;
-    margin-left: -1px;
+    padding: 0 40px;
+    margin-left: 0;
 
-    &:nth-child(2),
+    &:nth-child(2) {
+        gap: 11px;
+        margin-bottom: 6px;
+
+      .features__item-title {
+        gap: 1px;
+      }
+
+      .features__item-text p {
+        padding-top: 12px;
+      }
+    }
+
     &:nth-child(4) {
-      margin-bottom: 4px;
+      margin: 0;
+      margin-top: 7px;
 
       .features__item-text p {
         padding-top: 13px;
@@ -294,6 +335,10 @@
     gap: 0;
   }
 
+  @include vp-767 {
+    gap: 1px;
+  }
+
   p {
     margin: 0;
     font-size: 70px;
@@ -306,6 +351,8 @@
     @include vp-767 {
       font-size: 64px;
       line-height: 64px;
+      background: $gradient-digit-64 $color-resolution-blue;
+      background-clip: text;
     }
   }
 
@@ -321,7 +368,6 @@
 
     @include vp-767 {
       line-height: 20px;
-      margin-top: 1px;
     }
   }
 }
