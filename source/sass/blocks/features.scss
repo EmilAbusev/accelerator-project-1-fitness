@@ -63,8 +63,8 @@
   }
 
   @include vp-767 {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
     gap: 34px;
     text-align: center;
   }
@@ -137,7 +137,6 @@
 .features__item:nth-child(2),
 .features__item:nth-child(4),
 .features__item:nth-child(5) {
-
   @include vp-767 {
     margin: 0;
 
@@ -296,8 +295,8 @@
     margin-left: 0;
 
     &:nth-child(2) {
-        gap: 11px;
-        margin-bottom: 6px;
+      gap: 11px;
+      margin-bottom: 6px;
 
       .features__item-title {
         gap: 1px;
