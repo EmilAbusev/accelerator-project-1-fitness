@@ -31,13 +31,13 @@
 
 .price__image {
   position: absolute;
-  bottom: 2px;
+  bottom: 1px;
   right: 2px;
   z-index: 1;
 
   @include vp-1365 {
-    bottom: 30px;
-    right: 2px;
+    bottom: 31px;
+    right: 0;
   }
 
 

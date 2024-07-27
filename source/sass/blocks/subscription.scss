@@ -26,7 +26,7 @@
   margin: 0 auto;
   margin-top: 5px;
   padding: 0;
-  width: 350px;
+  width: 351px;
   list-style: none;
 
   &::before {
@@ -34,15 +34,18 @@
     bottom: 1px;
     left: 0;
     width: 100%;
-
     border-bottom: 2px solid $color-grey;
     opacity: 0.2;
     content: "";
+
+    @include vp-767 {
+      bottom: -2px;
+    }
   }
 
   @include vp-1365 {
     margin-top: 22px;
-    width: 310px;
+    width: 311px;
   }
 
   @include vp-767 {
@@ -61,6 +64,10 @@
     background: $color-crimson;
     transform: scale(0);
     content: "";
+
+    @include vp-767 {
+      bottom: -2px;
+    }
   }
 }
 
@@ -73,7 +80,8 @@
   position: relative;
   border: none;
   padding: 15px 0;
-  padding-bottom: 8px;
+  padding-right: 1px;
+  padding-bottom: 11px;
   background-color: transparent;
   line-height: 20px;
   font-size: 20px;
@@ -97,6 +105,10 @@
     background: transparent;
     transform: scale(0);
     content: "";
+
+    @include vp-767 {
+      bottom: -2px;
+    }
   }
 
 
@@ -168,14 +180,14 @@
 .subscription__wrapper {
   max-width: 1160px;
   margin: 0 auto;
-  margin-top: 41px;
+  margin-top: 39px;
 
   @include vp-1365 {
-    margin-top: 45px;
+    margin-top: 44px;
   }
 
   @include vp-767 {
-    margin-top: 30px;
+    margin-top: 32px;
   }
 }
 
@@ -193,7 +205,7 @@
   @include vp-1365 {
     flex-direction: column;
     width: 620px;
-    gap: 42px;
+    gap: 40px;
   }
 
   @include vp-767 {
@@ -208,11 +220,12 @@
 
 .subscription__description-item:first-child,
 .subscription__description-item:last-child {
-  padding: 57px 20px;
-  padding-bottom: 60px;
+  padding: 58px 20px;
+  padding-bottom: 59px;
+
 
   @include vp-1365 {
-    padding-top: 56px;
+    padding-top: 58px;
     padding-bottom: 59px;
   }
 
@@ -221,8 +234,9 @@
     padding-bottom: 44px;
   }
 
+
   span {
-    margin-top: 77px;
+    margin-top: 78px;
 
     @include vp-1365 {
       margin-top: 83px;
@@ -234,15 +248,23 @@
   }
 
   .subscription__description-button {
-    margin-top: 18px;
+    margin-top: 17px;
+
+    @include vp-1365 {
+      margin-top: 23px;
+    }
+
+    @include vp-767 {
+      margin-top: 18px;
+    }
   }
 }
 
 .subscription__description-item {
   display: flex;
   flex-direction: column;
-  padding: 58px 20px;
-  padding-bottom: 60px;
+  padding: 59px 20px;
+  padding-bottom: 59px;
   width: 360px;
   align-items: center;
   background-color: $color-default-white;
@@ -337,7 +359,7 @@
   }
 
   @include vp-1365 {
-    margin-top: 82px;
+    margin-top: 84px;
 
     &::before {
       bottom: 0;

@@ -83,8 +83,12 @@
 
 .about__information {
   width: 100%;
-  max-width: 678px;
+  max-width: 660px;
   min-height: 400px;
+
+  @include vp-1365 {
+    max-width: 678px;
+  }
 }
 
 .about__description {
