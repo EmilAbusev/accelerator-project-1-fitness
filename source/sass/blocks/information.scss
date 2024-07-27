@@ -19,6 +19,18 @@
   }
 }
 
+.information__video--background {
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $color-dark-cerulean-05;
+    content: "";
+  }
+}
+
 .information__video {
   position: absolute;
   top: 285px;
@@ -40,18 +52,6 @@
     left: 0;
     width: 100%;
     height: 170px;
-  }
-
-  &--background {
-    &::before {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: $color-dark-cerulean-05;
-      content: "";
-    }
   }
 
   img {
@@ -160,7 +160,6 @@
     }
   }
 
-
   svg {
     position: absolute;
     bottom: 28px;
@@ -176,8 +175,6 @@
       width: 12px;
       height: 12px;
     }
-
-    @include vp-767 {}
   }
 
   &:hover svg {
@@ -188,22 +185,22 @@
   &:active svg {
     fill: $color-sapphire;
   }
+}
 
-  &[disabled] {
-    pointer-events: none;
-    cursor: default;
+.information__button[disabled] {
+  pointer-events: none;
+  cursor: default;
 
-    &::before {
-      background: $color-default-white;
-    }
+  &::before {
+    background: $color-default-white;
+  }
 
-    &::after {
-      border: 2px solid $color-sapphire-06;
-    }
+  &::after {
+    border: 2px solid $color-sapphire-06;
+  }
 
-    & svg {
-      fill: $color-sapphire-06;
-    }
+  svg {
+    fill: $color-sapphire-06;
   }
 }
 

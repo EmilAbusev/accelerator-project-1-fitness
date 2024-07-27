@@ -58,42 +58,33 @@
     display: none;
   }
 
-  &.swiper-button-prev {
+  &--prev {
     bottom: 236px;
     left: -58px;
     z-index: 1;
 
     @include vp-1365 {
-      bottom: 233px;
-      left: 2px;
-    }
-
-    svg {
-
+      bottom: 42.3%;
+      left: -18px;
     }
   }
 
-  &.swiper-button-next {
+  &--next {
     bottom: 236px;
     right: -58px;
     z-index: 1;
     transform: rotate(180deg);
 
     @include vp-1365 {
-      bottom: 233px;
-      right: 2px;
-    }
-
-    svg {
-
+      bottom: 42.5%;
+      right: -18px;
     }
   }
 
-  & svg {
+  svg {
     position: absolute;
     left: 17px;
     color: $color-sapphire;
     fill: none;
   }
-
 }

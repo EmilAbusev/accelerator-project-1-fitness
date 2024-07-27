@@ -12,7 +12,7 @@
 
   @include vp-767 {
     margin: 0 15px;
-    margin-top: 20px
+    margin-top: 20px;
   }
 }
 
@@ -67,10 +67,9 @@
   img {
     width: 100%;
     height: 100%;
-    object-fit: cover
+    object-fit: cover;
   }
 }
-
 
 
 .slider-jury__description {
@@ -90,7 +89,6 @@
 }
 
 .slider-jury__description-title {
-
   h4 {
     margin: 0;
     font-weight: 400;

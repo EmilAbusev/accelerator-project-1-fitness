@@ -2,8 +2,8 @@ import Swiper from 'swiper';
 import {Navigation} from 'swiper/modules';
 
 const swiperSlider = document.querySelector('.swiper');
-const buttonNext = document.querySelector('.swiper-button-next');
-const buttonPrev = document.querySelector('.swiper-button-prev');
+const buttonNext = document.querySelector('.jury__button--next');
+const buttonPrev = document.querySelector('.jury__button--prev');
 
 const mySwiper = () => {
   new Swiper(swiperSlider, {

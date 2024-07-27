@@ -13,7 +13,7 @@
     }
   }
 
-  &.focus-visible:focus {
+  .focus-visible:focus {
     @content;
   }
 }
