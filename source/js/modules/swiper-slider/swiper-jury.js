@@ -1,5 +1,6 @@
-import Swiper from 'swiper';
-import {Navigation} from 'swiper/modules';
+import { Navigation } from 'swiper/modules';
+import { Swiper } from '../../vendor/swiper';
+
 
 const swiperSlider = document.querySelector('.swiper');
 const buttonNext = document.querySelector('.jury__button--next');
